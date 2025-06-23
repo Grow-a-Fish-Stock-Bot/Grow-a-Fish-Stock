@@ -68,7 +68,7 @@ app.post('/stock-update', async (req, res) => {
 
   const channel = await client.channels.fetch(CHANNEL_ID);
   await channel.send({
-    content: "@Stock Ping",
+    content: "@1386795957177553007",
     embeds: [embed],
     components: [row]
   });
