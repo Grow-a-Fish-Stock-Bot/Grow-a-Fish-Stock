@@ -10,9 +10,11 @@ const GAME_LINK = process.env.GAME_LINK;
 const RESTOCK_INTERVAL_MINUTES = 5;
 
 const seedEmojis = {
-  Sunflower: "🌻",
-  Watermelon: "🍉",
-  Cactus: "🌵",
+  Minnow: "<:Minnow:1386232097613680740>",
+  Goldfish: "<:Goldfish:1386232014788628582>",
+  Shark: "<:Shark:1386232150147334144>",
+  HammerHeadShark: "<:HammerHeadShark:1386232224298565814>",
+  Squid: "<:Squid:1386232307526012988>",
 };
 
 let lastHash = null;
@@ -39,7 +41,7 @@ function buildRestockEmbed(data) {
 
   const embed = new EmbedBuilder()
     .setTitle("🔄 Seed Shop Restocked!")
-    .setColor(0x33CC66)
+    .setColor(0x30bbe3)
     .setDescription(lines.join("\n"))
     .setFooter({ text: `⏳ Next restock in ${formatCountdown(RESTOCK_INTERVAL_MINUTES * 60 * 1000)}` })
     .setTimestamp();
@@ -66,7 +68,7 @@ app.post('/stock-update', async (req, res) => {
 
   const channel = await client.channels.fetch(CHANNEL_ID);
   await channel.send({
-    content: "@everyone",
+    content: "@Stock Ping",
     embeds: [embed],
     components: [row]
   });
