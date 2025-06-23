@@ -67,11 +67,14 @@ app.post('/stock-update', async (req, res) => {
   const row = new ActionRowBuilder().addComponents(button);
 
   const channel = await client.channels.fetch(CHANNEL_ID);
-  await channel.send({
-    content: "@1386795957177553007",
-    embeds: [embed],
-    components: [row]
-  });
+await channel.send({
+  content: "<@&1386795957177553007>",
+  embeds: [embed],
+  components: [row],
+  allowedMentions: {
+    parse: ['roles'],
+  },
+});
 
   res.sendStatus(200);
 });
