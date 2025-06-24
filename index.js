@@ -10,11 +10,12 @@ const GAME_LINK = process.env.GAME_LINK;
 const RESTOCK_INTERVAL_MINUTES = 5;
 
 const seedEmojis = {
-  "Minnow Seed": "<:Minnow:1386232097613680740>",
-  "Goldfish Seed": "<:Goldfish:1386232014788628582>",
-  "Shark Seed": "<:Shark:1386232150147334144>",
-  "HammerHeadShark Seed": "<:HammerHeadShark:1386232224298565814>",
-  "Squid Seed": "<:Squid:1386232307526012988>",
+  "Minnow Seed": "<:Minnow:1386761021427023944>",
+  "Goldfish Seed": "<:Goldfish:1386760982889496748>",
+  "Shark Seed": "<:Shark:1386761057116360835>",
+  "HammerHeadShark Seed": "<:HammerHeadShark:1386761100921671833>",
+  "Squid Seed": "<:Squid:1386761146224087101>",
+  "Blue Whale Seed": "<:BlueWhale:1386935338999611534>",
 };
 
 let lastHash = null;
