@@ -15,7 +15,7 @@ const seedEmojis = {
   "Shark Seed": "<:Shark:1386761057116360835>",
   "HammerHeadShark Seed": "<:HammerHeadShark:1386761100921671833>",
   "Squid Seed": "<:Squid:1386761146224087101>",
-  "Blue Whale Seed": "<:BlueWhale:1386935338999611534>",
+  "BlueWhale Seed": "<:BlueWhale:1386935338999611534>",
 };
 
 let lastHash = null;
