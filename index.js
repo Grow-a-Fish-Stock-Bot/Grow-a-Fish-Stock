@@ -12,7 +12,9 @@ const RESTOCK_INTERVAL_MINUTES = 5;
 const seedEmojis = {
   "Minnow Seed": "<:Minnow:1386761021427023944>",
   "Goldfish Seed": "<:Goldfish:1386760982889496748>",
+  "Stingray Seed": "<:Stingray:1387609038975537183>",
   "Shark Seed": "<:Shark:1386761057116360835>",
+  "GreatWhiteShark Seed": "<:GreatWhiteShark:1387608991546474568>",
   "HammerHeadShark Seed": "<:HammerHeadShark:1386761100921671833>",
   "Squid Seed": "<:Squid:1386761146224087101>",
   "BlueWhale Seed": "<:BlueWhale:1386935338999611534>",
